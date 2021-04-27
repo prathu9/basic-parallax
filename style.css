@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    height:100%;
+    font-size:16px;
+    font-family: 'lato', sans-serif;
+    line-height:1.8em;
+    color:#666;
+}
+
+.header-img,
+.footer-img,
+.img-section-1,
+.img-section-2{
+    position:relative;
+    opacity:0.9;
+}
+
+.header-img,
+.footer-img{
+    background: #000 
+                url('./images/Photo\ by\ Daniele\ Colucci\ on\ Unsplash.jpg')
+                10% 50%/cover
+                no-repeat
+                fixed; /* Fixed is Parallax, Scroll is Normal */
+    min-height:100%;
+}
+
+.img-section-1{
+    background:#000 
+                url('./images/Photo\ by\ Jonathan\ Roger\ on\ Unsplash.jpg')
+                center center/cover
+                no-repeat
+                fixed; /* Fixed is Parallax, Scroll is Normal */
+    min-height:100%;
+}
+
+.img-section-2{
+    background: #000
+                url('./images/Photo\ by\ Piotr\ Chrobot\ on\ Unsplash.jpg')
+                center center/cover
+                no-repeat
+                fixed; /* Fixed is Parallax, Scroll is Normal */
+    min-height:100%;
+}
+
+.section{
+    text-align:center;
+    padding:50px 0;
+}
+
+.section p{
+    width:80%;
+    min-width:300px;
+    margin:20px auto;
+}
+
+.section-dark{
+    background-color: #000;
+    color:#fff;
+}
+
+.img-text{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+.img-text .border{
+    background-color: #111;
+    color:#fff;
+    padding:20px;
+}
+
+section .img-text .border{
+    background-color: transparent;
+} 
+
+@media screen and (max-width: 4000px){
+    .img-text{
+        font-size: 16px;
+    }
+}
